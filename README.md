@@ -1,15 +1,17 @@
 # Go/Golang benchmarking example
 
-This package contains examples of Go benchmarks. The code in this package is part of this article on benchmarks in Go.
+This package contains examples of Go benchmarks. The code in this package is part of an [article on benchmarks in Go](https://www.willem.dev/articles/benchmarks-performance-testing/).
 
-In the code we compare three different set implementations and benchmark the effort required to get intersections:
+This package benchmarks `Intersection` methods on three set implementations:
 - `map[string]bool`: Sets as maps of booleans.
 - `map[string]struct{}`: Sets as maps of empty structs.
 - `[]string`: Sets as slices.
 
-For all sets we will use `string` as the element type.
+`string` is used as the element type for all sets.
 
-The goal is to learn how to write benchmarks, not to create the most complete or versatile set implementation. If you're looking for that, check this article.
+The goal is to learn how to write benchmarks, not to create the most complete or versatile set implementation.
+
+If you're looking for more information on Go sets, check out [this article on sets in Go](https://www.willem.dev/articles/sets-in-golang/).
 
 ## Unit tests
 
