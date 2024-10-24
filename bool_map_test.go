@@ -39,8 +39,7 @@ func Benchmark_BoolMapSet(b *testing.B) {
 			// doesn't optimize away our benchmark.
 			//
 			// To do this, we need to assign our results
-			// to a global variable. This is slow however,
-			// so we first assign to a local variable.
+			// to a global variable at the end of the benchmark.
 
 			// local variable
 			var result benchmarkfun.BoolMapSet
